@@ -6,12 +6,10 @@ import pygame
 from constants import *
 
 
-pygame.init()
-
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-
 
 def main():
+	pygame.init()
+	screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 	while True:
 
@@ -19,8 +17,7 @@ def main():
 			if event.type == pygame.QUIT:
 				return
 
-		screen.fill((0, 0, 0))
-
+		screen.fill("black")
 		pygame.display.flip()
 
 
